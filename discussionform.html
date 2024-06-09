@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion Forum</title>
+  <link rel="stylesheet" href="css files\styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="course.html">Home</a>
+      <a href="discussionform.html">Discussion Forum</a>
+      <a href="course.html"></a>
+      <a href="course.html"></a>
+    </nav>
+  </header> 
+
+  <main>
+    <section class="discussion-forum">
+      <h1>Course Discussion Forum</h1>
+      <form id="discussion-form" action="submit_discussion.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+
+      <section class="discussion-threads">
+        <h2>Discussion Threads</h2>
+        <div class="thread">
+          <h3>java script</h3>
+          <p>Username: prashanth</p>
+          <p>Message: Explain the difference between undefined and null in JavaScript.</p>
+        </div>
+        <div class="thread">
+          <h3>java script</h3>
+          <p>Username: tharun reddy</p>
+          <p>Message: Undefined:
+
+            Represents a variable that has been declared but has not been assigned a value.
+            It's the default value of uninitialized variables.
+            It's a primitive data type in JavaScript.<br><br>
+            Null:
+            
+            Represents an intentional absence of any object value.
+            It's often used to represent that a variable or object does not exist, or has no value.
+            It's a primitive value but is treated as an object.</p>
+        </div>
+        </section>
+        </section>
+          <ul>
+            <li><a href="">View all</a></li>
+          </ul>
+  </main>
+  <script src="js files\app.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Discussion Forum. All rights reserved.</p>
+  </footer>
+</body>
+</html>
